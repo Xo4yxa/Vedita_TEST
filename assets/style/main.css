@@ -1,0 +1,111 @@
+/* Это БАЗА */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  height: 100vh;
+  background-color: rgba(0, 74, 117, 0.5);
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-table {
+  max-width: 1600px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* Стили окна списка продуктов */
+.table {
+  display: flex;
+  width: 1600px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-style {
+  display: inline;
+  font-weight: 700;
+
+  line-height: 3;
+  padding: 55px;
+  list-style: none;
+}
+
+.create-product {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Стили кнопок */
+
+.btn-style {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  color: black;
+  background: rgb(170, 170, 170);
+}
+
+.btn-hiding {
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 111, 199);
+  box-shadow: 0 -3px rgb(53, 99, 167) inset;
+}
+
+.btn-add {
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+}
+
+.btn-remove {
+  text-decoration: none;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(199, 64, 64);
+  box-shadow: 0 -3px rgb(167, 53, 53) inset;
+}
+
+.btn-hiding:hover {
+  background: rgb(53, 99, 167);
+}
+.btn-hiding:active {
+  background: rgb(33, 69, 147);
+  box-shadow: 0 3px rgb(33, 59, 147) inset;
+}
+
+.btn-add:hover {
+  background: rgb(53, 167, 110);
+}
+.btn-add:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+
+.btn-remove:hover {
+  background: rgb(167, 53, 53);
+}
+.btn-remove:active {
+  background: rgb(147, 33, 33);
+  box-shadow: 0 3px rgb(147, 33, 33) inset;
+}
+
+/* Скрытие строки с продуктом */
+
+.hide-product {
+  display: none;
+}
